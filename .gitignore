@@ -1,4 +1,14 @@
+
 *.pdf
+
+# ignore latex files
 *.gz
 *.aux
+
+
+# ignore logs
 *.log
+
+
+# ignore bibliography files
+Sources

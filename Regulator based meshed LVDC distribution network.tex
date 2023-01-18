@@ -3,33 +3,47 @@
 \usepackage{amsmath, amssymb, amsthm}
 \usepackage{titlesec}
 \titleformat{\chapter}{\bfseries\LARGE}{\thechapter.~}{0em}{}
+\usepackage{comment}
+
+\usepackage[english]{babel}
+\usepackage{blindtext}
+
+\usepackage{graphicx}
+\graphicspath{ {./Figures/} }
 
 \begin{document}
 
-\title{Meshed DC grid design in low voltage distribution grid}
+\title{Regulator based meshed LVDC distribution network}
 \author{Tomi Lotila}
 \maketitle
 
 \tableofcontents
 
+
+\listoffigures
+
 % This chapter should answer the following questions.
- % What is a meshed grid?
- % Why is meshed grid needed?
- % Is meshed gird already in use?
  % What is in this paper?
  % Which questions does this paper answers?
 \chapter{Introduction}
 \input{Chapters/Introduction/Introduction.tex}
 
 % This chapter should answer the following questions.
+ % What is a meshed power grid?
+ % Why is meshed grid needed?
+ % Is meshed gird already in use?
  % How do meshed- and branched girds differ?
  % How do DC- and AC grids differ?
-\chapter{Overview of meshed grid}
-\input{Chapters/Overview-of-meshed-grid/Introduction-to-meshed-grid.tex}
+\chapter{Overview of meshed power grid}
+
 
 % This chapter should answer the following questions.
-\chapter{DC current regulators}
-\input{Chapters/DC-current-regulators/DC-current-regulators.tex}
+\chapter{DC regulators}
+\input{Chapters/DC-regulators/what-are-DC-regulators.tex}
+\section{Linear regulators} \input{Chapters/DC-regulators/what-is-linear-DC-regulator.tex}
+\section{Switch-mode regulators} \input{Chapters/DC-regulators/what-are-switch-mode-DC-regulators.tex}
+\subsection{Step-down converter} \input{Chapters/DC-regulators/what-is-step-down-converter.tex}
+\subsection{Chopper converter} \input{Chapters/DC-regulators/what-is-chopper-converter.tex}
 
  % This chapter should answer the following questions.
 \chapter{Overview of Power Semiconductor Switches}
@@ -44,6 +58,7 @@
 \input{Chapters/Black-start-of-a-meshed-grid/Introduction.tex}
 
 % This chapter should answer the following questions.
+% only full rated converter wind turbine scheme, no fixed speed or double fed induction generator
 \chapter{Connecting distributed generation to DC grid}
 
 % This chapter should answer the following questions.
