@@ -1,5 +1,6 @@
 
 *.pdf
+!Regulator based meshed LVDC distribution network.pdf
 
 # ignore latex files
 *.gz
